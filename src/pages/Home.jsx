@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import heroImage from "../assets/hero.webp";
 
-function Home() {
+export default function Home() {
   return (
     <>
       <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-2 md:py-24">
@@ -37,7 +37,7 @@ function Home() {
           width="1600"
           height="1000"
           fetchPriority="high"
-          className="aspect-[8/5] w-full rounded-2xl object-cover shadow-soft"
+          className="aspect-8/5 w-full rounded-2xl object-cover shadow-soft"
         />
       </section>
 
@@ -86,5 +86,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router";
+import { useState } from "react";
+import { Link, NavLink } from "react-router";
 import { Coffee, Menu } from "lucide-react";
 
-function Header() {
+export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [pathname]);
-
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
@@ -138,5 +132,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

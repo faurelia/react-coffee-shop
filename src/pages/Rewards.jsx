@@ -80,7 +80,7 @@ function RewardLevelCard({ level, points, perks }) {
   );
 }
 
-function Rewards() {
+export default function Rewards() {
   return (
     <>
       <section className="bg-espresso text-primary-foreground">
@@ -139,5 +139,3 @@ function Rewards() {
     </>
   );
 }
-
-export default Rewards;

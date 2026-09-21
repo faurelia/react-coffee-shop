@@ -1,6 +1,4 @@
-import { Link } from "react-router";
-
-function Menu() {
+export default function Menu() {
   return (
     <>
       <div className="mx-auto max-w-4xl px-5 py-16">
@@ -176,5 +174,3 @@ function Menu() {
     </>
   );
 }
-
-export default Menu;

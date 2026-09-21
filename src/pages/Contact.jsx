@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { MapPin, Mail } from "lucide-react";
 
-function Contact() {
+export default function Contact() {
   return (
     <>
       <section className="bg-espresso py-20 text-center text-primary-foreground">
@@ -13,7 +13,7 @@ function Contact() {
       </section>
 
       <div className="mx-auto grid max-w-6xl items-start gap-12 px-5 py-16 md:grid-cols-2">
-        <div className="order-last md:order-none">
+        <div className="order-last md:order-0">
           <h2 className="text-2xl font-semibold">Find us</h2>
           <div className="mt-5 space-y-4 text-sm">
             <p className="flex items-center gap-3">
@@ -87,7 +87,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="order-first rounded-2xl border border-border bg-card p-8 shadow-soft md:order-none">
+        <div className="order-first rounded-2xl border border-border bg-card p-8 shadow-soft md:order-0">
           <h2 className="text-2xl font-semibold">Send a message</h2>
           <form className="mt-6 space-y-4" action="#" method="post">
             <div>
@@ -135,7 +135,7 @@ function Contact() {
                 required
                 rows="5"
                 placeholder="What's on your mind?"
-                className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="flex min-h-20 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               ></textarea>
             </div>
             <button
@@ -150,5 +150,3 @@ function Contact() {
     </>
   );
 }
-
-export default Contact;

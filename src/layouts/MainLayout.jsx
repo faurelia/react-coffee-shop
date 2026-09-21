@@ -1,11 +1,13 @@
-import { Outlet } from 'react-router'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { Outlet, useLocation } from "react-router";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-function MainLayout() {
+export default function MainLayout() {
+  const location = useLocation();
+
   return (
     <>
-      <Header />
+      <Header key={location.key} />
 
       <main>
         <Outlet />
@@ -13,7 +15,5 @@ function MainLayout() {
 
       <Footer />
     </>
-  )
+  );
 }
-
-export default MainLayout

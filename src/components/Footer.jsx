@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { Coffee } from "lucide-react";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="border-t border-border bg-espresso text-primary-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-12 md:flex-row md:items-start md:justify-between">
@@ -67,5 +67,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

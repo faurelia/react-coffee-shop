@@ -81,7 +81,7 @@ function GiftCard({ style, amount, caption, label }) {
   );
 }
 
-function GiftCards() {
+export default function GiftCards() {
   return (
     <>
       <div className="mx-auto max-w-6xl px-5 py-16">
@@ -166,5 +166,3 @@ function GiftCards() {
     </>
   );
 }
-
-export default GiftCards;

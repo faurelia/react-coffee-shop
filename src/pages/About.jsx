@@ -5,7 +5,7 @@ import StudyImage from "../assets/coffee-kettle-study.webp";
 import DiningImage from "../assets/coffee-kettle-dining.webp";
 import StaffsImage from "../assets/coffee-kettle-staffs.webp";
 
-function About() {
+export default function About() {
   return (
     <>
       <section className="relative overflow-hidden">
@@ -73,7 +73,7 @@ function About() {
             height="800"
             loading="lazy"
             decoding="async"
-            className="aspect-[3/2] w-full rounded-2xl object-cover shadow-soft"
+            className="aspect-3/2 w-full rounded-2xl object-cover shadow-soft"
           />
         </div>
       </section>
@@ -132,7 +132,7 @@ function About() {
               height="600"
               loading="lazy"
               decoding="async"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="aspect-4/3 w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <figcaption className="px-5 py-4 text-center text-sm font-medium text-foreground">
               A place to study, sip, and stay awhile
@@ -146,7 +146,7 @@ function About() {
               height="600"
               loading="lazy"
               decoding="async"
-              className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="aspect-4/3 w-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <figcaption className="px-5 py-4 text-center text-sm font-medium text-foreground">
               A cozy spot to slow down
@@ -165,7 +165,7 @@ function About() {
               height="800"
               loading="lazy"
               decoding="async"
-              className="aspect-[3/2] h-full w-full object-cover"
+              className="aspect-3/2 h-full w-full object-cover"
             />
             <div className="p-8 md:p-12">
               <h2 className="text-3xl font-bold md:text-4xl">
@@ -188,5 +188,3 @@ function About() {
     </>
   );
 }
-
-export default About;
